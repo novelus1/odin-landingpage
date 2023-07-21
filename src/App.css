@@ -1,0 +1,44 @@
+.hero-section-container {
+  background-color: #1F2937;
+  height: 500px;
+}
+
+.header-logo{
+  font-size: 24px;
+  color: #F9FAF8;
+
+}
+
+.hero-section-container .header-link-text {
+  color: #E5E7EB;
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+  
+
+}
+
+.hero-main-text-container div {
+  font-size: 48px;
+  font-weight: 800px;
+  color: #F9FAF8;
+}
+
+.hero-main-text-container p {
+  color: #E5E7EB;
+  font-size: 18px;
+}
+
+.sign-up-button {
+  margin-left: 50px; /* roboczy margin */
+  color: white;
+  background-color: #3882F6;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100px;
+}
+
+#landing-page {
+  height: 50%;
+}
