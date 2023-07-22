@@ -1,72 +1,117 @@
-
+body {
+  font-family: "Roboto";
+}
+body {
+  padding-bottom: 50px;
+}
 
 .hero-section-container {
   background-color: #1f2937;
   height: 650px;
 }
 
-
-.header-link-text-container {
-  width: 68.5%;
+.hero-section-container .header-links-container {
+  width: 60.5%;
   margin: auto;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   padding-top: 2em;
 }
-.header-link-text-container .header-links {
+
+.hero-section-container .header-links-container .header-links {
   color: #e5e7eb;
   font-size: 18px;
   display: flex;
   justify-content: flex-end;
   gap: 40px;
 }
-.header-link-text-container .header-logo {
+
+.hero-section-container .header-links-container .header-logo {
   font-size: 24px;
   color: #f9faf8;
   align-self: baseline;
   font-weight: bold;
 }
 
-
-.hero-main-text-container {
+.hero-section-container .hero-main-text-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 400px;
-  width: 80%;
-  margin: auto;
-  gap: 6rem;
-  font-size: 48px;
-  font-weight: 800;
-  line-height: 1;
-  color: #f9faf8;
-  position: relative;
-  padding-top: 2em;
+  gap: 5rem;
+  padding-top: 4em;
 }
 
-.hero-main-text-container p {
+.hero-section-container .hero-main-text-container .hero-bold-text {
+  color: #f9faf8;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.hero-section-container .hero-main-text-container p {
   color: #e5e7eb;
   font-size: 18px;
   font-weight: normal;
+  margin: 0;
 }
 
-.sign-up-button {
+.hero-section-container .hero-main-text-container .sign-up-button {
   color: white;
   background-color: #3882f6;
   border-radius: 10px;
   width: 115px;
   height: 35px;
-  margin-top: -5px;
   font-weight: 750;
-  position: absolute;
+  margin-top: 10px;
 }
 
-.hero-main-text-wrapper {
-  width: 450px;
+.hero-section-container .hero-main-text-container .hero-main-text-wrapper {
+  width: 400px;
+  line-height: 1.2;
 }
 
-.hero-main-text-container img {
-  width: 50%;
+.hero-section-container .hero-main-text-container img {
+  width: 35%;
   height: 60%;
+}
+
+.random-information {
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+  height: 100px;
+  margin-top: 50px;
+}
+
+.image-section-container {
+  display: flex;
+  justify-content: center;
+  height: 250px;
+}
+
+.image-section-container .image-section {
+  display: flex;
+  gap: 50px;
+}
+
+.image-section-container .image-section .image-and-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-section-container .image-section .image-and-description .image {
+  border: 5px solid lightseagreen;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image-section-container .image-section .image-and-description .description {
+  text-align: center;
 }
