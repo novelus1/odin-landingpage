@@ -1,7 +1,5 @@
 body {
   font-family: "Roboto";
-}
-body {
   padding-bottom: 50px;
 }
 
@@ -114,4 +112,31 @@ body {
 
 .image-section-container .image-section .image-and-description .description {
   text-align: center;
+}
+
+.quote-section-container {
+  height: 550px;
+  display: flex;
+  background-color: #e5e7eb;
+}
+
+.quote-section-container .quote-container {
+  font-size: 36px;
+  color: #1f2937;
+  margin: auto;
+  height: 50%;
+  width: 50%;
+  font-style: italic;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-section-container .quote-container .signature {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  align-self: flex-end;
+  margin-top: 1em;
 }

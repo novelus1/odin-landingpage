@@ -50,6 +50,17 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="quote-section-container">
+        <div className="quote-container">
+          <div className="quote">
+            This is an inspiring quote, or a testimonial from a customer. Maybe
+            it's just filling up space, or maybe people will actually read it.
+            Who knows? All I know is that it looks nice.
+          </div>
+          <div className="signature">-Thor, God of Thunder</div>
+        </div>
+      </div>
+      
     </div>
   );
 }
