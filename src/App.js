@@ -60,7 +60,22 @@ function App() {
           <div className="signature">-Thor, God of Thunder</div>
         </div>
       </div>
-      
+      <div className="call-to-action-section-container">
+        <div className="call-to-action-text-container">
+          <div>
+            <div className="text">Call to action! It's time!</div>
+            <p>
+              Sign up for our product by clicking that button right over there!
+            </p>
+          </div>
+            <button className="sign-up-button">Sign up</button>
+        </div>
+      </div>
+      <div className="footer-container">
+        <div className="footer">
+          Copyright © The Odin Project 2021
+        </div>
+      </div>
     </div>
   );
 }
