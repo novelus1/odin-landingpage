@@ -1,81 +1,98 @@
+import React from "react";
 import "./App.css";
+
 import page from "./page.jpg";
-import frog from "./frog.png";
+import clown from "./clown.jpg";
+import mad from "./mad.jpg";
+import happy from "./happy.png";
+import hacker from "./hacker.jpg";
 
 function App() {
   return (
     <div>
-      <div className="hero-section-container">
-        <div className="header-links-container">
-          <div className="header-logo">Header Logo</div>
-          <div className="header-links">
-            <div>header link one</div>
-            <div>header link two</div>
-            <div>header link three</div>
+      <header className="hero-section">
+        <div className="hero-section__header-links-container">
+          <div className="hero-section__header-logo">Header Logo</div>
+          <div className="hero-section__header-links">
+            <div className="hero-section__header-link">header link one</div>
+            <div className="hero-section__header-link">header link two</div>
+            <div className="hero-section__header-link">header link three</div>
           </div>
         </div>
-        <div className="hero-main-text-container">
-          <div className="hero-main-text-wrapper">
-            <p className="hero-bold-text">This website is awesome</p>
+        <div className="hero-section__main-text">
+          <div className="hero-section__main-text-wrapper">
+            <h1 className="hero-section__bold-text">This website is awesome</h1>
             <p>
               This website has some subtext that goes here under the main title.
               It's a smaller font and the color is lower contrast
             </p>
-            <button className="sign-up-button">Sign up</button>
+            <button className="hero-section__sign-up-button">Sign up</button>
           </div>
-          <img src={page} alt="Landing page" id="landing-page" />
+          <img src={page} alt="Landing page" className="hero-section__landing-page" />
         </div>
-      </div>
-      <div className="random-information">Some random information.</div>
-      <div className="image-section-container">
-        <div className="image-section">
-          <div className="image-and-description">
+      </header>
+
+      <div className="random-information">We have a few Pepes in here!</div>
+
+      <section className="image-section">
+        <div className="image-section__image-list">
+          <div className="image-section__image-and-description">
             <div
-              className="image"
-              style={{ backgroundImage: `url(${frog})` }}
+              className="image-section__image"
+              style={{ backgroundImage: `url(${happy})` }}
             ></div>
-            <div className="description">Pepe</div>
+            <div className="image-section__description">Happy Pepe</div>
           </div>
-          <div className="image-and-description">
-            <div className="image"></div>
-            <div className="description">Description 1</div>
+          <div className="image-section__image-and-description">
+            <div
+              className="image-section__image"
+              style={{ backgroundImage: `url(${hacker})` }}
+            ></div>
+            <div className="image-section__description">Hacker Pepe</div>
           </div>
-          <div className="image-and-description">
-            <div className="image"></div>
-            <div className="description">Description 2</div>
+          <div className="image-section__image-and-description">
+            <div
+              className="image-section__image"
+              style={{ backgroundImage: `url(${clown})` }}
+            ></div>
+            <div className="image-section__description">Clown Pepe</div>
           </div>
-          <div className="image-and-description">
-            <div className="image"></div>
-            <div className="description">Description 3</div>
+          <div className="image-section__image-and-description">
+            <div
+              className="image-section__image"
+              style={{ backgroundImage: `url(${mad})` }}
+            ></div>
+            <div className="image-section__description">Mad Pepe</div>
           </div>
         </div>
-      </div>
-      <div className="quote-section-container">
-        <div className="quote-container">
-          <div className="quote">
+      </section>
+
+      <section className="quote-section">
+        <div className="quote-section__quote-container">
+          <div className="quote-section__quote">
             This is an inspiring quote, or a testimonial from a customer. Maybe
             it's just filling up space, or maybe people will actually read it.
             Who knows? All I know is that it looks nice.
           </div>
-          <div className="signature">-Thor, God of Thunder</div>
+          <span className="quote-section__signature">-Thor, God of Thunder</span>
         </div>
-      </div>
-      <div className="call-to-action-section-container">
-        <div className="call-to-action-text-container">
+      </section>
+
+      <section className="call-to-action-section">
+        <div className="call-to-action-section__text-container">
           <div>
-            <div className="text">Call to action! It's time!</div>
+            <div className="call-to-action-section__text">Call to action! It's time!</div>
             <p>
               Sign up for our product by clicking that button right over there!
             </p>
           </div>
-            <button className="sign-up-button">Sign up</button>
+          <button className="call-to-action-section__sign-up-button">Sign up</button>
         </div>
-      </div>
-      <div className="footer-container">
-        <div className="footer">
-          Copyright © The Odin Project 2021
-        </div>
-      </div>
+      </section>
+
+      <footer className="footer">
+        <div className="footer__text">Copyright © The Odin Project 2021</div>
+      </footer>
     </div>
   );
 }
